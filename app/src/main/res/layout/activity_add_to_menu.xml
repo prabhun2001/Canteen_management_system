@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddToMenu">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backtoadminhome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add New Food Item"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/itemname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/text_input"
+        android:layout_marginTop="85dp"
+        android:hint="Enter Food Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <EditText
+        android:id="@+id/itemprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/text_input"
+        app:layout_constraintTop_toBottomOf="@+id/itemname"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:hint="Enter Food Price(e.g, 40Rs)"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="40dp"
+        />
+
+    <EditText
+        android:id="@+id/itemurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="35dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/text_input"
+        android:minHeight="48dp"
+        android:padding="10dp"
+       android:hint="Image URL"
+        app:layout_constraintTop_toBottomOf="@+id/itemprice"
+        tools:layout_editor_absoluteX="185dp" />
+
+    <Button
+        android:id="@+id/addtomenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="22dp"
+        android:background="@drawable/button_back"
+        android:text="ADD to menu"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemurl"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="22dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
